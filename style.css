@@ -5,14 +5,26 @@
 
 body {
     background-color: black;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .container {
-    border: 1px solid red;
     max-width: 1000px;
     margin: 0 auto;  /*automatico para a direita e esquerda*/
 }
 
 h1{
-    color: rgb(198, 202, 202);
+    color: rgb(3, 3, 3);
+}
+
+header{
+    background-color: rgb(98, 230, 230);
+    padding: 10px;
+    text-align: center;
+}
+
+.importante{
+    background-image: url(./corporate-businessman-giving-presentation-large-audience.jpg);
+    height: 600px;
+    background-size: cover;
 }
