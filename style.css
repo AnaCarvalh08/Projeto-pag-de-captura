@@ -28,3 +28,95 @@ header{
     height: 600px;
     background-size: cover;
 }
+
+.formulario{
+    max-width: 250px;
+    background-color: rgba(255, 255, 255, 0.404);
+    padding: 20px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+h2, p{
+    margin-bottom: 10px;
+}
+
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    background-color: rgb(33, 166, 199);
+    color: rgb(213, 226, 226);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(5, 39, 59);
+    color: rgb(213, 226, 226);
+}
+
+footer{
+    background-color: rgb(53, 51, 51);
+    color: rgb(161, 163, 163);
+    padding: 40px;
+    text-align: center;
+}
+
+h3{
+    margin-bottom: 20px;
+}
+
+img{
+    margin-bottom: 20px;
+}
+
+/*de 1024 pra cima é para desktop e notebook*/
+/*de 700 até 1024 é uma média para tablets*/
+/*até 420 é para celular/mobile*/
+
+/*Essa estilização só vai funcionar de 1024 para baixo*/
+
+@media screen and (max-width: 1024px){
+
+    .formulario{
+        float: none;
+        margin: 0;
+        max-width: 40%;
+    }
+
+    .importante{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descricao{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .formulario{
+        max-width: 80%;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+    .descricao p{
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 300px){
+    img{
+        width: 100px;
+    }
+}
